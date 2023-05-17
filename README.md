@@ -20,7 +20,17 @@ If you don't have them installed. Follow the below links:
 [Install Helm]("https://helm.sh/docs/intro/install/")
 
 To Get Password For Graphana
+
 -> kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
+Then Login to Grapfana
+
+add datasource -> prometheus -> copy paste URL ->save adn test
+
+create dashboard -> import -> 3662 ->prometheus -> save
+
+So it will get the information from kubernetes cluster
+
 
 <br></br>
 
