@@ -19,6 +19,9 @@ If you don't have them installed. Follow the below links:
 
 [Install Helm]("https://helm.sh/docs/intro/install/")
 
+To Get Password For Graphana
+-> kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
 <br></br>
 
 ## It all starts with Monitoring 
